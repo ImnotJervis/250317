@@ -1,0 +1,180 @@
+//구구단 출력
+/*
+void main() {
+  for (var i = 2; i < 10; i++) {
+    for(var j = 1; j < 10; j++) {
+      print('${i} * ${j} = ${i*j}');
+    }print(' ');  //단 나누기
+  }
+}
+*/
+//자료형
+/*
+void main() {
+  var i = 5;
+  var d = 3.141592;
+  var s1 = 'String 1';
+  var s2 = "String 2";
+  var b = true;
+  var n1 = 10;
+  var n2 = 10.25;
+  
+  var cond1 = i > 5;  //false
+  var cond2 = s2 == "String 2";
+  var result = cond1 || cond2;
+}
+*/
+//상수와 연산자
+/*
+void main() {
+  final name = "NAME";
+  //name = "NAME A" //불가
+  const name2 = "NAME2";
+  //name2 = "NAME B"  //불가
+  
+  //+, -, * , /
+  var a = 7;
+  var b = 5;
+  var res = a ~/ b;
+  print(res);
+  print(res is int);
+  print(res is double); //dart는 2와 2.0이 동일하다
+  
+}*/
+//전위증감, 후위증감
+/*
+void main() {
+  var v = 5;
+  //++v;
+  print(++v);
+  print(v);
+  
+  //전위 : 선 연산 후 처리
+  //후위 : 선 처리 후 연산
+}*/
+//비교연산자
+/*
+void main() {
+  /*var a = 5, b = 6;
+  
+  var c1 = a == b;
+  var c2 = a != b;
+  var c3 = a > b;
+  var c4 = a < b;
+  var c5 = a >= b;
+  var c6 = a <= b;
+  
+  var res = [c1, c2, c3, c4, c5, c6];
+  
+  print(res);
+  */
+  /*
+  //&&, ||, !
+  
+  //금일 식사 유무
+  var isA = true;
+  var isB = true;
+  var isC = true;
+  
+  var c = isA || isB || isC;  //ex)난 오늘 끼니를 먹었음으로 true임
+  */
+  /*
+  var v=5;  //5 == integer
+  print(v is int);
+  print(v is double); //double = 5.0, Dart는 5와 5.0을 동일시
+  print(v is String);
+  print(v is bool);
+  
+  int a = 5;
+  num b = a;
+  print(b);
+  */
+  
+  
+}*/
+//Fucntion
+/*
+void main() {
+  prt2('Hello, World!');
+}
+
+void prt2(String ip) {
+  print('*$ip*');
+  
+  
+}*/
+
+//Function-익명
+/*
+void main() {
+  var lottoNums = [5,6,11,13,17,21];
+  
+  lottoNums.forEach((num)=>print(num));
+}*/
+
+//if
+/*
+void main() {
+  var score = 88;
+  
+  if (score >= 90) {
+    print('A');
+  } else if (score >= 80) {
+    print('B');
+  } else if (score >= 70) {
+    print('C');
+  } else if (score >= 60) {
+    print('D');
+  } else {
+    print('E');
+  }
+}*/
+
+//for
+/*
+void main() {
+  var items = ['One','Two','Three'];
+  
+  for(var i=0; i<items.length; i++) {
+    print(items[i]);
+  }
+  
+  print(' ');
+  
+  for (var item in items) {
+    print(item);
+  }
+  
+  print(' ');
+  
+  items.forEach((item)=>print(item));
+}*/
+
+//0 그리기
+/*
+void main() {
+  var n = 10;
+  var res = '';
+  for(var y = 0; y < n; y++) {
+    for(var x=0; x<n; x++) {
+      var c = f1(x,y,0);
+        if(c) {
+          res += '=';
+        } else {
+          res += '';
+        }
+    }
+    res+='\n';
+  }
+  print(res);
+  
+}
+bool f1(int x, int y, int size) {
+    return x == 0 || y==0 || x==size-1 || y==size-1;
+ }*/
+void main() {
+  var input = '2005-03-11';
+  var output = DateTime.parse(input);
+  
+  print(output.day);
+}
